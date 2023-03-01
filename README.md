@@ -10,6 +10,7 @@ Bouncing Button Code in HTML
 		.button {
 			display: inline-block;
 			padding: 15px 24px;
+			margin-top:10px;
 			background-color: #eccbd6;
 			color: #55003e;
 			border-radius: 24px;
@@ -45,6 +46,6 @@ Bouncing Button Code in HTML
 	</style>
 </head>
 <body>
-	<a href="https://www.brynncreates.com/resume" target="_blank" class="button">SHOW ME THE RESUME →</a>
+	<a href="https://wwwlink.com" target="_blank" class="button">SHOW ME THE RESUME →</a>
 </body>
 </html>
