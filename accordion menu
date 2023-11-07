@@ -1,0 +1,114 @@
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End FAQ Section -->
+
+
+CSS
+
+/*================ FAQ Section Styles ==========*/
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Accordion Item Styles */
+.accordion-item {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+/* Accordion Header and Button Styles */
+.accordion-header .accordion-button {
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem 1.25rem;
+  background-color: #DE5499;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	
+}
+
+/* Accordion Button Pseudo-elements for Plus Sign */
+.accordion-button::after {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  content: '+';
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: none;
+}
+
+/* Change to minus sign when accordion is expanded */
+.accordion-button:not(.collapsed)::after {
+  content: '−'; /* Minus sign */
+}
+.accordion-button:not(.collapsed),
+.accordion-collapse {
+  background-color: transparent; /* This makes the background transparent */
+}
+/* Accordion Content/Bodies Styles */
+.accordion-body {
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem 1.25rem;
+  background-color: #EDDCD9 !important; /* Specific background color */
+  color: #264143;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  border-top: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* This rule ensures no padding or margin causes white space around the collapsed content */
+.accordion-collapse {
+  padding: 0 !important;
+  margin: 0 !important;
+}
