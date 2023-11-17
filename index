@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <!-- IE Edge Meta Tag -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Viewport for Responsive Web Design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>Brynn Barnett</title>
+
+  <!-- Meta Descriptions -->
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon3.png" rel="icon">
+  <link href="assets/img/apple-touch-icon2.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Kanit:wght@600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+  <!-- Preconnect Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Include Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Include jQuery and Bootstrap JS for the modal functionality -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Inline CSS -->
+  <style>
+    .faq-answer {
+      display: none;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    .faq-answer-visible {
+      display: block;
+      max-height: 200px;
+    }
+  </style>
+</head>
+<body>
+   <!-- Script for Interactive FAQ -->
+   <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const faqItems = document.querySelectorAll('.faq-item');
+    
+      faqItems.forEach((item) => {
+        const question = item.querySelector('.faq-question');
+        const arrow = item.querySelector('.faq-arrow');
+        const answer = item.querySelector('.faq-answer');
+    
+        const toggleAnswer = () => {
+          const isAnswerVisible = answer.classList.contains('faq-answer-visible');
+          answer.classList.toggle('faq-answer-visible', !isAnswerVisible);
+        };
+    
+        question.addEventListener('click', toggleAnswer);
+        arrow.addEventListener('click', toggleAnswer);
+      });
+    });
+  </script>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+		
+      <div class="profile">
+        <img src="assets/img/croppedoptimized.jpg" alt="Picture of me" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Brynn Barnett</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+            <li><a href="#home" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-star"></i> <span>Skills</span></a></li>
+            <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+            <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+            <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Relevant Coursework</span></a></li>
+            <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact Me</span></a></li>
+        </ul>
+    </nav>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Brynn Barnett</h1>
+      <p>I'm a <span class="typed" data-typed-items="Designer, Student, Technical Communicator, Artist"></span></p>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>Who I Am</h2>
+                 </div>
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/headshotgrain.png" class="img-fluid" alt="Picture of me">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Technical Writer &amp; Learning Designer</h3>
+            <p class="fst-italic">
+            I will bring your ideas to life. You name it, I can create it.&nbsp; </p>
+            <div class="row">
+  <div class="col-lg-6">
+    <ul>
+      <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Ocala, Florida</span></li>
+      <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>Barnettbrynn@ucf.edu</span></li>
+    </ul>
+  </div>
+  <div class="col-lg-6">
+    <ul>
+      <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>Master's Degree</span></li>
+      <li><i class="bi bi-chevron-right"></i> <strong>Availability:</strong> <span>Available for Hire</span></li>
+    </ul>
+  </div>
+</div>
+           <div class="about-text">
+  <p class="about-point">
+    <span class="about-bullet">✦</span> <strong class="about-heading">What Sparks My Creativity?</strong> I enjoy the excitement of crafting something one-of-a-kind, knowing that no two designs will ever be the same. It's all about that feeling of being unique, standing out, and letting your inner sparkle shine. I thrive most when I'm challenged, stepping out of my comfort zone, and tackling problems to come up with creative solutions.
+
+  </p>
+    <p class="about-point">
+    <span class="about-bullet">✦</span> <strong class="about-heading">What Do I Bring To the Table?</strong> I'm a versatile professional with experience in illustration, technical writing, e-learning, and instructional design. Whatever you need, I've got the creative know-how to make it happen.
+  </p>
+</div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+	  
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p style="color: #F2EBE9; margin-bottom: 5px;">My skill set is a mix of creativity and practicality. I enjoy crafting engaging learning experiences and have a solid handle on graphic design tools. Plus, I’m not afraid to dive into some code to tweak a website or two.
+</p>
+        </div>
+
+        <div class="row skills-content">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="progress">
+              <span class="skill">Illustration<i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Technical Writing<i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Instructional Design<i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+                <span class="skill">Figma<i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+     <div class="progress">
+  <span class="skill">HTML/CSS/JS <i class="val">50%</i></span>
+  <div class="progress-bar-wrap">
+    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>I'm a graduate student in Instructional Design with a technical communication background and proven expertise in streamlining claims processes and training at Allstate. I am excited about transforming complex information into user-friendly formats and creating educational growth.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Professional Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Brynn Barnett</h4>
+              <p><em>Innovative and deadline-driven designer with a talent for breaking down complex information. </em></p>
+              <ul>
+                <li>Ocala/Orlando, FL</li>
+                <li>(352) 867-5309</li>
+                <li>Barnettbrynn@ucf.edu</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of  Arts, Instructional design &amp; Technology</h4>
+              <h5>2022 - 2024</h5>
+              <p><em>University of Central Florida, Orlando, FL</em></p>
+              <p>Focuses on crafting engaging educational experiences using a mix of innovative design and practical methods, for audiences in business, schools, and higher education. The program combines the latest instructional science with hands-on practice to prepare effective training and learning solutions.
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of  Arts, Technical communication, English</h4>
+              <h5>2021 - 2022</h5>
+              <p><em>University of Central Florida, Orlando, FL</em></p>
+              <p>Focused on transforming complex and specialized concepts into clear, user-friendly language. This program equipped me with the skills needed to bridge the gap between complex technical information and the needs of diverse audiences, ensuring clarity and accessibility. 
+</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Claims Processing Specialist</h4>
+              <h5>2023 - Present</h5>
+              <p><em>Allstate Insurance Company, Ocala, FL</em></p>
+              <ul>
+                <li>Analyzes and gathers auto claim details to establish liability and coverage, ensuring policy knowledge is applied with accuracy.</li>
+                <li>Direct claim settlements efficiently, exercising discretion and judgment for payments up to $10,000.</li>
+                <li>Coordinates with Special Investigation Units to identify and address potential fraud, upholding the integrity of claim handling.</li>
+                <li>Efficiently manages a high-volume caseload, processing and summarizing over 50 detailed claims weekly to maintain swift claim cycle times.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Training Specialist</h4>
+              <h5>2022 - 2023</h5>
+              <p><em>Allstate Insurance Company, Ocala, FL</em></p>
+              <ul>
+                <li>Led instructional sessions and facilitated virtual training programs for new hires, focusing on e-learning adoption, problem-solving, and effective customer interaction for classes exceeding 25 participants.</li>
+                <li>Evaluated eLearning metrics to pinpoint areas needing improvement and to identify content that posed challenges for learners.</li>
+                <li>Guided new employees by offering targeted coaching and creating enhancement plans for professional growth.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	  <!-- End Resume Section -->
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio section-bg" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container">
+    <div class="section-title">
+      <h2>Portfolio</h2>
+      <p style="color: #F2EBE9; margin-bottom: 5px;">My portfolio showcases a range of skills, from web design projects to innovative instructional materials. I enjoy transforming complex concepts into accessible, visually appealing learning experiences.</p>
+    </div>
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-graduate">Graduate</li>
+          <li data-filter=".filter-media">Media</li>
+          <li data-filter=".filter-undergrad">Undergrad</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-graduate filter-media">
+        <div class="portfolio-wrap">
+          <img src="assets/img/brynnovation.png" class="img-fluid" alt="picture of podcast logo">
+          <div class="portfolio-links">
+            <a href="assets/img/brynnovation.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Brynnovation: A Podcast"><i class="bx bx-plus"></i></a>
+            <a href="http://rhartshorne.com/fall-2023/BarnettBrynn/EME6507/eportfolio/podcast.html" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-graduate filter-media">
+        <div class="portfolio-wrap">
+          <img src="assets/img/mediaproject1.png" class="img-fluid" alt="picture of media project">
+          <div class="portfolio-links">
+            <a href="assets/img/mediaproject1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Illustration of John Whitney by Me"><i class="bx bx-plus"></i></a>
+            <a href="http://rhartshorne.com/fall-2023/BarnettBrynn/EME6507/eportfolio/mediaproject.html" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-graduate filter-media">
+        <div class="portfolio-wrap">
+          <img src="assets/img/multimediaproject.gif" class="img-fluid" alt="multimedia gif">
+          <div class="portfolio-links">
+            <a href="assets/img/multimediaproject.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Multimedia Project"><i class="bx bx-plus"></i></a>
+            <a href="http://rhartshorne.com/fall-2023/BarnettBrynn/EME6507/eportfolio/multimediaproject.html" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-undergrad">
+        <div class="portfolio-wrap">
+          <img src="assets/img/successflyer.jpg" class="img-fluid" alt="Description of Image">
+          <div class="portfolio-links">
+            <a href="assets/img/successflyer.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Freshman Flyer"><i class="bx bx-plus"></i></a>
+            <a href="http://rhartshorne.com/fall-2023/BarnettBrynn/EME6507/eportfolio/flyer.html" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-undergrad">
+        <div class="portfolio-wrap">
+          <img src="assets/img/carnival.png" class="img-fluid" alt="">
+          <div class="portfolio-links">
+            <a href="assets/img/carnival.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Carnival Cruise Lines Flyer"><i class="bx bx-plus"></i></a>
+            <a href="carnival.html" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-graduate">
+        <div class="portfolio-wrap">
+          <img src="assets/img/lowes.png" class="img-fluid" alt="">
+          <div class="portfolio-links">
+            <a href="assets/img/lowes.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Lowes Comapny Ethics Flyer"><i class="bx bx-plus"></i></a>
+            <a href="lowes.html" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <style>
+        .portfolio .portfolio-wrap img {
+            width: 350px;
+            height: 250px;
+            object-fit: cover;
+        }
+      </style>
+    </section><!-- End Portfolio Section -->
+	  
+<!-- Relevant Coursework -->
+<section id="services" class="services" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container">
+    <div class="section-title">
+      <h2>Relevant Coursework</h2>
+      <p>A list of graduate and undergraduate courses that are fundamental to my expertise in Instructional Design and Technical Writing. 
+        <br><br>Click on each category to explore detailed information and key takeaways from each course. These courses reflect my academic journey and specialization areas.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+        <div class="icon"><i class="bi bi-briefcase"></i></div>
+        <h4 class="title custom-design"><a href="design.html#design-section" target="_blank">Design</a></h4>
+        <ul class="custom-list description">
+          <li>Multimedia for Education and Training</li>
+          <li>Usability Engineering</li>
+          <li>Instructional Systems Design</li>
+          <li>Designing for the Web**</li>
+          <li>Visual Technical Communication**</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon"><i class="bi bi-card-checklist"></i></div>
+        <h4 class="title custom-elearning"><a href="design.html#elearning-section" target="_blank">eLearning</a></h4>
+        <ul class="custom-list description">
+          <li>Distance Education</li>
+          <li>Interactive Online Virtual Teaching Environment</li>
+          <li>Virtual Teaching and Digital Education*</li>
+		  <li>Instructional Simulations Design*</li>
+          <li>Instructional Game Design*</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon"><i class="bi bi-bar-chart"></i></div>
+        <h4 class="title custom-writing-learning">
+          <a href="design.html#writing-theory-section" target="_blank">Writing and Theory</a>
+      </h4>
+             <ul class="custom-list description">
+          <li>Fundamentals of Graduate Research</li>
+          <li>Current Trends in IT</li>
+          <li>Research in Instructional Technology*</li>
+          <li>Writing for the Computer Industry**</li>
+          <li>Technical Writing Style**</li>
+        </ul>
+      </div>
+          </div>
+	   <div class="course-level-legend" data-aos="fade-up" data-aos-delay="250">
+    <p><strong>*</strong>future graduate-level coursework</p>
+    <p><strong>**</strong>undergraduate-level coursework</p>
+</div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="faq section-bg" style="padding: 55px 0 5px 0;">
+  <div class="container" style="margin-bottom: 10px; padding-bottom: 55px;">
+    <div class="section-title" style="margin-bottom: 25px;">
+      <h2 style="margin-bottom: 10px;">Frequently Asked Questions</h2>
+      <p style="color: #F2EBE9; margin-bottom: 5px;">Here are some common questions and their answers.</p>
+    </div>
+    <div class="faq-container">
+      <div class="faq-item" data-aos="fade-up" data-aos-duration="1000">
+        <div class="faq-title" onclick="toggleFAQ(0)">
+          <h2>✦ Placeholder</h2>
+        </div>
+        <div class="faq-content">
+          <p>Placeholder</p>
+        </div>
+      </div>
+      <div class="faq-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <div class="faq-title" onclick="toggleFAQ(1)">
+          <h2>✦ What made you want to pursue Instructional Design and Technical Communication?</h2>
+        </div>
+        <div class="faq-content">
+          <p>After initially pursuing nursing, I discovered my passion for words and transitioned to a major in Technical Communication at UCF. This led me to an MA in Instructional Systems Design and Technology, where I honed my skills in writing, UI/UX design, and web development. My experience at UCF has been enriching, blending my love for technology and creativity, and I now enjoy developing user-friendly documents and interfaces while engaging with various aspects of digital and instructional design.📚🖋️💡</p>
+        </div>
+      </div>
+      <div class="faq-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="faq-title" onclick="toggleFAQ(2)">
+          <h2>✦ What else should we know about you?</h2>
+        </div>
+        <div class="faq-content">
+          <p>placeholder</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End FAQ Section -->
+
+<!-- ======= Readings Section ======= -->
+<section id="readings" class="readings">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up" data-aos-duration="1000">
+      <h2>Readings</h2>
+      <p>Select readings that have influenced our work and philosophy. Click on a reading to learn more about its significance and summary.</p>
+    </div>
+    <div class="row">
+      <!-- First reading item will trigger the first modal -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+        <div class="reading-item" data-toggle="modal" data-target="#readingModal1">
+          <h4>✦ 15 Things to Know Before Designing a Website</h4>
+          <p>Author Name</p>
+        </div>
+      </div>
+      <!-- Reading Modal 1 -->
+        <div class="modal fade" id="readingModal1" tabindex="-1" role="dialog" aria-labelledby="readingModalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="readingModalLabel1">15 Things to Know Before Designing a Website</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Synopsis of Reading 1...
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Second reading item will trigger the second modal -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+        <div class="reading-item" data-toggle="modal" data-target="#readingModal2">
+          <h4>✦ 10 Key Differences Between Designing for Print and Web</h4>
+          <p>Second Author's Name</p>
+        </div>
+      </div>
+      <!-- Reading Modal 2 -->
+        <div class="modal fade" id="readingModal2" tabindex="-1" role="dialog" aria-labelledby="readingModalLabel2" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="readingModalLabel2">10 Key Differences Between Designing for Print and Web</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Synopsis of Reading 2...
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Reading Modal 2 -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+          <div class="reading-item" data-toggle="modal" data-target="#readingModal3">
+            <h4>✦ 10 Key Differences Between Designing for Print and Web</h4>
+            <p>Second Author's Name</p>
+          </div>
+        </div>
+     <!-- Reading Modal 3 -->
+     <div class="modal fade" id="readingModal3" tabindex="-1" role="dialog" aria-labelledby="readingModalLabel3" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="readingModalLabel3">10 Key Differences Between Designing for Print and Web</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Synopsis of Reading 3...
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Reading Modal 3 -->
+    </div>
+  </div>
+</section><!-- End Readings Section -->
+
+  <style>
+    /* Apply the color #264143 to all text inside the readings section */
+    #readings {
+      color: #264143;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    /* When hovering over the reading items, change the color to #DE5499 */
+    .reading-item:hover {
+      color: #DE5499;
+      cursor: pointer;
+    }
+  
+    /* Set the background color for the modal body */
+    .modal-body {
+      background-color: #EDDCD9;
+    }
+  
+    /* Set Playfair Display for headers and Poppins for body text */
+    .section-title h2,
+    .modal-title {
+      font-family: 'Playfair Display', serif;
+    }
+    .modal-content {
+    border-radius: 25px;
+}
+  
+    .reading-item h4,
+    .modal-body {
+      font-family: 'Poppins', sans-serif;
+      
+}
+/* Round the top corners of the modal header */
+.modal-header {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/* Round the bottom corners of the modal footer or last element within modal-body if there is no footer */
+.modal-footer,
+.modal-body:last-child {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+/* If there is no modal-footer, ensure the last child of modal-body gets the border-radius */
+.modal-body:last-child {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.reading-item p {
+    padding-left: 25px; /* Adjust this value to increase or decrease the indent */
+  }
+  </style>
+  
+</section><!-- End Readings Section -->
+
+<!-- Contact Section -->
+<section id="contact" class="contact section-bg" style="padding: 55px 0 5px 0;" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container" style="margin-bottom: 0px;">
+    <div class="section-title" style="margin-bottom: 0px; padding-left: 0;">
+      <h2>Contact</h2>
+      <p style="color: #F2EBE9; margin-bottom: 1px;">If you'd like to provide me feedback or ask a question, please send me an email by clicking below!</p>
+    </div>
+    <div class="content-container">
+      <a href="mailto:barnettbrynn@ucf.edu" class="email-link">
+        <strong><span class="typed" data-typed-items="Send me an email...."></span></strong>
+        <img src="assets/img/keyboard.gif" alt="Email Me" class="contact-image" title="Send me an email"/>
+      </a>
+    </div>
+    <center><p style="color: #F2EBE9; margin-bottom: 0px;">This site was last updated November 26, 2023 by Brynn Barnett</p></center>
+  </div>
+</section>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy;  2023 <strong><span>Brynn Barnett</span></strong>
+      </div>
+      <div class="credits">
+             Designed by <a href="http://rhartshorne.com/fall-2023/BarnettBrynn/EME6507/eportfolio/index.html">Brynn Barnett</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+
+<!-- FAQ -->
+<script>
+  // Add click event to each question and arrow
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector('.faq-question');
+    const arrow = item.querySelector('.faq-arrow');
+    const answer = item.querySelector('.faq-answer');
+
+    const toggleAnswer = () => {
+      // Check if the answer is visible
+      const isAnswerVisible = answer.classList.contains('faq-answer-visible');
+      
+      // Toggle the class based on the visibility
+      answer.classList.toggle('faq-answer-visible', !isAnswerVisible);
+    };
+
+    question.addEventListener('click', toggleAnswer);
+    arrow.addEventListener('click', toggleAnswer);
+  });
+</script>
+
+</body> <!-- End Body -->
